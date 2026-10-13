@@ -1,0 +1,37 @@
+#Format: name          tex_name               wavefront_file
+
+#extras
+bent_custom_bh          block_black          sphere.obj
+large_box_case_edges		block_black		large_box_case_edges.obj
+pyramid		block_black		pyramid.obj
+bent_base_txt_rat_jumpscare               txt                    large_box.obj
+white_void               block_bright                    huge_box_inverted.obj
+
+#pictures
+bent_vault_door_image          vault_door_image          9_picture_box.obj
+bent_warning1_image          risk_of_head_injuries1          3_picture_box.obj
+bent_green_key_image		key_green		3_picture_box.obj
+bent_green_lock_image		lock_green		3_picture_box.obj
+bent_ruby_program_image          ruby_programming_language          9_picture_box.obj
+
+#useables
+bent_door_open_maze_key             bent_env_var_open_door_red             large_box.obj
+bent_door_open_electric_key             bent_env_var_open_door             large_box.obj
+bent_key_electric_flower             bent_key_electric_maze             large_box.obj
+bent_key_maze_flower             bent_key_big_maze             large_box.obj
+bent_armor_2000p             armor2000             large_box.obj
+
+#monsters
+MonsterMadGoblin          MonsterMadGoblin          sphere.obj
+MonsterCuteGoblin          MonsterCuteGoblin          sphere.obj
+MonsterBloodBoyGreatest          MonsterBloodBoyGreatest          sphere.obj
+MonsterTwistedFanatic                  MonsterFanatic                  sphere_twisted.obj
+MonsterCommonCow                  MonsterCommonCow                  sphere_high.obj 
+MonsterAmethystRock          MonsterAmethystRock          spike_ball_1.obj
+MonsterTopazRock          MonsterTopazRock          octahedron.obj
+MonsterEmeraldRock          MonsterEmeraldRock          octahedron.obj
+MonsterIoliteRock          MonsterIoliteRock          octahedron.obj
+MonsterYinYangBlue          MonsterYinYangBlue          sphere.obj
+MonsterGhostRat			MonsterRatMinorInverted		sphere_inverted.obj
+MonsterTwistedRat			MonsterRatMinor		sphere_twisted.obj
+MonsterKingRat			MonsterKingRat		sphere_high.obj

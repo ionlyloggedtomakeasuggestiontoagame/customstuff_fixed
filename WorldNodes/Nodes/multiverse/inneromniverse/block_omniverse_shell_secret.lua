@@ -1,0 +1,12 @@
+function p.__get_is_solid()
+    return false
+end
+
+function p.__get_tex()
+    return ""
+end
+
+function p.__main()
+    set_default_block("XAR_EMPTY_BORING")
+    set_pos(0,0,0,"XAR_RAINBOW_FLOWER_INVISIBLE")
+end

@@ -1,0 +1,86 @@
+#Lines in this file that start with "#" are comment lines.
+#(Empty lines are also comment lines).
+
+#Format: texture_name  X   file_path
+#Here X is either "_" if the image has no alpha,
+#or "a" if it does have alpha.
+#Alpha images must be .tga files or .png files.
+#Non-alpha files must be .jpg or .png files.
+
+block_dan_house_kitchen  _  Blocks/block_dan_house_kitchen.jpg
+
+icon_rocket _ Icons/icon_rocket.jpg
+icon_brake _ Icons/icon_brake.jpg
+icon_armor_four _ Icons/icon_armor_four.jpg
+
+#You can add more here!!!
+
+block_error _ error.png
+set block_error nearest_neighbor true
+
+#############################################
+#                 blocks
+#############################################
+
+##concrete
+block_dark_concrete_yellow_border  _  Blocks/block_dark_concrete_yellow_border.jpg
+block_dark_concrete_red_border_transparent a Blocks/block_dark_concrete_red_border_transparent.png
+block_green_and_pink_border _ Blocks/block_green_and_pink_border.jpg
+
+##deco
+block_deco1_orange1 _ Blocks/block_deco1_orange1.jpg
+block_deco1_red1 _ Blocks/block_deco1_red1.jpg
+block_deco1_rainbow1 _ Blocks/block_deco1_rainbow1.jpg
+
+##infinity
+block_infinity_blue  _  Blocks/block_infinity_blue.jpg
+block_infinity_pink  _  Blocks/block_infinity_pink.jpg
+
+##misc
+block_shawvoland  _  Blocks/block_shawvoland.jpg
+block_byork  _  Blocks/block_byork.jpg
+block_dock  _  Blocks/block_dock.jpg
+block_bright _ Blocks/block_bright.jpg
+block_yan_pattern _ Blocks/block_yan_pattern.jpg
+block_field_barrier a Blocks/block_field_barrier.png
+block_infinity_locked  _  Blocks/block_infinity_locked.jpg
+block_sky_clouds  _  Blocks/block_sky_clouds.jpg
+block_cheese  _  Blocks/block_cheese.jpg
+block_E1_green  _  Blocks/block_E1_green.jpg
+block_metronome_tick  _  Blocks/block_metronome_tick.jpg
+block_metronome_tack  _  Blocks/block_metronome_tack.jpg
+lock_green _ Blocks/lock_green.jpg
+block_yellow_black_striped_maze  _  Blocks/block_yellow_black_striped_maze.jpg
+
+#############################################
+#                 monsters
+#############################################
+
+MonsterBloodBoyGreatest _ Monsters/monster_blood_boy_greatest.jpg
+MonsterCuteGoblin _ Monsters/monster_cute_goblin.jpg
+MonsterMadGoblin _ Monsters/monster_mad_goblin.jpg
+MonsterCommonCow _ Monsters/monster_common_cow.jpg
+MonsterAmethystRock _ Monsters/Crystal/monster_amethyst_rock.png
+MonsterTopazRock _ Monsters/Crystal/monster_topaz_rock.png
+MonsterEmeraldRock _ Monsters/Crystal/monster_emerald_rock.png
+MonsterIoliteRock _ Monsters/Crystal/monster_iolite_rock.png
+MonsterYinYangBlue _ Monsters/monster_yinyang_blue.jpg
+MonsterRatMinorInverted _ Monsters/monster_rat_minor_inverted.jpg
+MonsterKingRat _ Monsters/monster_king_rat.jpg
+
+##############################################
+#                 pictures
+##############################################
+
+vault_door_image _ Pictures/vault_door_image.jpg
+risk_of_head_injuries1 _ Pictures/warning_sign_1.jpg
+ruby_programming_language a Pictures/Ruby_programming_language.png
+
+##############################################
+#                 bents
+##############################################
+
+bent_key_big_maze _ Bents/key_big_maze.jpg
+bent_key_electric_maze _ Bents/key_electric_maze.jpg
+bent_env_var_open_door_red _ Bents/ent_open_door_red.jpg
+armor2000 _ Bents/armor2000.jpg
