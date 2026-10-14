@@ -47,7 +47,7 @@ function p.totem()
     end
     omniverse.create_edges("XAR_SOLID_BORING",5,5,5,9,9,9)
     add_bent_s(7,7,7,"bent_base_txt","")
-    local fact = randi(0,5)
+    local fact = randi(0,3)
     local corner = ""
     --local fact = 3
     if fact == 0 then
