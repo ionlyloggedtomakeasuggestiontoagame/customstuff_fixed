@@ -31,10 +31,10 @@ end
 function p.__render(wid)
     ga_win_set_background(wid, std.vec(0.0, 0.0, 0.0), 0.95)
 
-    if ga_get_b("multi.custom.stats.unrespawnable_zone") == false then
-    local path = ga_get_window_stack_display_names()
-    game_win_top_bar.render_path(wid, path)
-    ga_win_set_front_color_default(wid)
+    if not ga_get_b("multi.custom.stats.unrespawnable_zone") then
+        local path = ga_get_window_stack_display_names()
+        game_win_top_bar.render_path(wid, path)
+        ga_win_set_front_color_default(wid)
 
         ga_win_set_char_size(wid, 0.03, 0.06)
         ga_win_txt_center(wid, 0.9, "RESPAWN?")
@@ -56,13 +56,13 @@ function p.__render(wid)
 
         ga_win_line(wid, 0.0,0.5, 1.0,0.5, std.vec(1.0, 1.0, 1.0))
 
-        local low_ammo_mode = ga_get_b("woldgen.state.low_ammo")
+        local low_ammo_mode = ga_get_b("worldgen.state.low_ammo")
         if not low_ammo_mode then
             local respawn_cost = game_respawn.get_keepammo_cost()
-            ga_win_txt_center(wid, 0.37,
-                "OR PRESS P TO PAY ^xff0000" .. tostring(respawn_cost) .. "^! GOLD")
-            ga_win_txt_center(wid, 0.3, "TO RESPAWN BUT KEEPING")
-            ga_win_txt_center(wid, 0.23, "YOUR HEALTH, AMMO, AND ARMOR")
+            ga_win_txt_center(wid, 0.30,
+                "TO PAY ^xff0000" .. tostring(respawn_cost) .. "^! GOLD")
+            ga_win_txt_center(wid, 0.23, "TO RESPAWN BUT KEEPING")
+            ga_win_txt_center(wid, 0.16, "YOUR HEALTH, AMMO, AND ARMOR")
         end
     else
         ga_win_set_char_size(wid, 0.03, 0.06)
@@ -71,41 +71,41 @@ function p.__render(wid)
         ga_win_set_char_size(wid, 0.02, 0.04)
         ga_win_txt_center(wid, 0.5, "^xff0000YOU ARE INSIDE AN UNRESPAWNABLE ZONE")
     end
-    ga_win_set_char_size(wid, 0.02, 0.04)
-    ga_win_txt_center(wid, 0.06, "Go Back (ESC)")
 end
 
 function p.__process_input(wid)
-    if ga_get_b("multi.custom.stats.unrespawnable_zone") == false then
+    if not ga_get_b("multi.custom.stats.unrespawnable_zone") then
         if ga_win_key_pressed(wid, "Y") then
             ga_set_i("xar.player.health.amount", -100)
             ga_play_sound("player_death")
-            ga_main_menu_pop_all(true)
+            ga_window_pop_all()
             --
             --Actually respawning.
             ga_command("respawn force")
             return
         end
-        if ga_win_key_pressed(wid, "P") then
+
+        local which_button = ga_win_widget_button_process_input(wid)
+
+        if( which_button == press_p_handle or
+            ga_win_key_pressed(wid, "P") )
+        then
             if ga_get_b("xar.player.arcade.inside") then
-                ga_main_menu_push("win_main_menu_respawn_arcade_error")
+                ga_window_push("win_main_menu_respawn_arcade_error")
                 return
             end
             ga_play_sound("buy")
-            ga_main_menu_pop_all(true)
+            ga_window_pop_all()
             --Actually respawning.
             ga_command("respawn force keepammo")
             return
         end
     end
-    if ga_win_key_pressed(wid, "N") then
+    if( ga_win_widget_go_back_button_process_input(wid) or
+        ga_win_key_pressed(wid, "N") )
+    then
         ga_play_sound("menu_back")
-        ga_main_menu_pop()
-        return
-    end
-    if ga_win_key_pressed(wid, "ESC") then
-        ga_play_sound("menu_back")
-        ga_main_menu_pop()
+        ga_window_pop()
         return
     end
 end
