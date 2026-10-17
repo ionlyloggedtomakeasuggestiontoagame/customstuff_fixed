@@ -28,6 +28,9 @@ function p.amalgamation()
             set_pos(x,y,z,colortype)
         end
     end
+    if get_input_adj_bt(0, 0, 1) == "XAR_YING_FOREST" then
+        create_rect("block_abstract_amalgamation",0,0,15,15,15,15)
+    end
     
     block_abstract_field_air.air()
     omniverse.rings()

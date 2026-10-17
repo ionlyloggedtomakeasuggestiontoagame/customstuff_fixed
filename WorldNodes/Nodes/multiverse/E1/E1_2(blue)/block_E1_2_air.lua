@@ -3,15 +3,18 @@ function p.__get_tex() return "" end
 
 function p.__main()
     set_default_block("block_E1_2_air")
-    if (randf() < 1/10) then
-        if randf() < 1/4 then
-            set_pos(5,5,5,"block_Jade_Maze_Outside")
-        else
-            set_pos(5,5,5,"block_Pyrite_Outside")
-        end
-    else
-        set_pos(5,5,5,"block_E1_2_rhombus")
+    local dungeon = {"block_E1_2_rhombus","block_Jade_Maze_Outside","block_Pyrite_Outside"}
+    if randf() < 1/2 then
+        dungeon[#dungeon+1] = "block_Jade_Maze_Outside"
     end
+    if randf() < 1/4 then
+        dungeon[#dungeon+1] = "block_Pyrite_Outside"
+    end
+    if randf() < 1/64 then
+        dungeon[#dungeon+1] = "block_ametrine_sponge"
+    end
+    local dungeontype = dungeon[randi(1,#dungeon)]
+    set_pos(5,5,5,dungeontype)
 
     --monsters
     if(randf() < 0.125) then

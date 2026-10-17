@@ -15,10 +15,8 @@ bent_green_lock_image		lock_green		3_picture_box.obj
 bent_ruby_program_image          ruby_programming_language          9_picture_box.obj
 
 #useables
-bent_door_open_maze_key             bent_env_var_open_door_red             large_box.obj
-bent_door_open_electric_key             bent_env_var_open_door             large_box.obj
-bent_key_electric_flower             bent_key_electric_maze             large_box.obj
-bent_key_maze_flower             bent_key_big_maze             large_box.obj
+bent_door_open_E1_key             bent_env_var_open_door_redblue_spiral             large_box.obj
+bent_key_E1             bent_key_E1             large_box.obj
 bent_armor_2000p             armor2000             large_box.obj
 
 #monsters

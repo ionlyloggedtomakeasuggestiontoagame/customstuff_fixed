@@ -12,6 +12,6 @@ function p.__main()
     create_rect("XAR_ANTI_PLUG",1,1,15,14,14,15)
     create_rect("block_E1_1_door",1,1,7,14,14,7)
     create_rect("block_E1_1_one_way",1,1,0,14,14,0)
-    add_bent(7,7,9,"bent_door_open_maze_key")
+    add_bent(7,7,9,"bent_door_open_E1_key")
     add_bent(7,7,5,"bent_base_ring_green")
 end

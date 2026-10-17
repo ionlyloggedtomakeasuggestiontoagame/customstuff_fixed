@@ -19,14 +19,6 @@ function p.__main()
 
     block_E1_2_walls.octahedron()
 
-    --monsters
-    if(randf() < 0.125) then
-         local x = randi(0,15)
-         local y = randi(0,15)
-         local z = randi(0,15)
-            add_ment(x,y,z,"ment_monster_mad_goblin")
-    end
-
     --rings
     omniverse.rings()
 end

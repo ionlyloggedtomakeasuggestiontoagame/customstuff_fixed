@@ -4,7 +4,7 @@ function p.__get_tex() return "block_deco1_red1" end
 function p.__main()
     set_default_block("block_E1_2_air")
     srand(seed_normal())
-    omniverse.sponge("block_E1_2_air","block_Ruby_Sponge")
+    fractals.sponge("block_E1_2_air","block_Ruby_Sponge")
     create_rect("block_E1_2_air",4,4,4, 11,11,11)
     if get_input_adj_bt(0, 0, 1) == "block_Ruby_Pillar" then
         create_rect("block_Ruby_Sponge",0,0,15,15,15,15)

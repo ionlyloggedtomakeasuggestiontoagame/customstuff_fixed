@@ -9,7 +9,7 @@ end
 function p.__main()
     set_default_block("block_E1_2_air")
     srand(seed_normal())
-    omniverse.sponge("block_E1_2_air","block_Citrine_Sponge")
+    fractals.sponge("block_E1_2_air","block_Citrine_Sponge")
     create_rect("block_E1_2_air",4,4,4, 11,11,11)
     if get_input_adj_bt(0, 0, 1) == "block_Citrine_Pillar" then
         create_rect("block_Citrine_Sponge",0,0,15,15,15,15)

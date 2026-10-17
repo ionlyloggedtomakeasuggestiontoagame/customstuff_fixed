@@ -1,11 +1,11 @@
 function p.payload(level, bp)
-    ga_set_b("multi.custom.key.electric", true)
+    ga_set_b("multi.custom.key.E1", true)
     ga_play_sound("pickup_powerup")
     ga_bent_remove_perm(level, bp)
-    if ga_get_b("multi.custom.key.electric") then
+    if ga_get_b("multi.custom.key.E1") then
         game_msg.add("You already carry this key")
     else
-        game_msg.add("You now carry the entrance to E1 zone 2")
+        game_msg.add("You now carry the entrance to E1")
     end
 end
 
@@ -19,7 +19,7 @@ function p.__on_touch(level, bp)
 end
 
 function p.__get_use_msg(level, bp)
-    return "Electric Key"
+    return "E1 Key"
 end
 
 function p.__on_use(level, bp)

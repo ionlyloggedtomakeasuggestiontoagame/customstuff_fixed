@@ -31,6 +31,7 @@ block_green_and_pink_border _ Blocks/block_green_and_pink_border.jpg
 block_deco1_orange1 _ Blocks/block_deco1_orange1.jpg
 block_deco1_red1 _ Blocks/block_deco1_red1.jpg
 block_deco1_rainbow1 _ Blocks/block_deco1_rainbow1.jpg
+block_deco1_shade1 _ Blocks/block_deco1_shade1.jpg
 
 ##infinity
 block_infinity_blue  _  Blocks/block_infinity_blue.jpg
@@ -80,7 +81,8 @@ ruby_programming_language a Pictures/Ruby_programming_language.png
 #                 bents
 ##############################################
 
-bent_key_big_maze _ Bents/key_big_maze.jpg
-bent_key_electric_maze _ Bents/key_electric_maze.jpg
-bent_env_var_open_door_red _ Bents/ent_open_door_red.jpg
+bent_key_big_maze _ Bents/Obsolete/key_big_maze.jpg
+bent_key_electric_maze _ Bents/Obsolete/key_electric_maze.jpg
+bent_key_E1 _ Bents/key_E1.jpg
+bent_env_var_open_door_redblue_spiral _ Bents/ent_open_door_redblue_spiral.jpg
 armor2000 _ Bents/armor2000.jpg

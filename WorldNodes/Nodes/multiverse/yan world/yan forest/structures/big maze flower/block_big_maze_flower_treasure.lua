@@ -10,7 +10,7 @@ function p.__main()
     set_default_block("XAR_EMPTY_BORING")
     std.create_edges("XAR_SOLID_BORING_MAZE")
     add_bent(13,13,13,"bent_base_ring_pink_source")
-    add_bent(7,7,11,"bent_key_maze_flower")
+    add_bent(7,7,11,"bent_key_E1")
     add_bent(7,7,9,"bent_base_save")
     add_bent(7,7,7,"bent_gold_once_300")
     if get_input_path_bt(get_level()-1) == "block_electricity_maze_treasure_kilo" then

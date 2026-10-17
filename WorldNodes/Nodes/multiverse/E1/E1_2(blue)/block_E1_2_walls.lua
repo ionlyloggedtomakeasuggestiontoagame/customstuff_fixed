@@ -35,7 +35,7 @@ function p.__main()
 end
 
 function p.structurething(xc,yc,zc)
-    local structures = {"XAR_FANATIC_LATTICE","XAR_FANATIC_WEED_AMMO_INVISIBLE","block_duo_maze"}
+    local structures = {"XAR_FANATIC_LATTICE","XAR_MAHOGANY_AMMO","block_duo_maze"}
     local structuretype = structures[randi(1,#structures)]
     set_pos(xc,yc,zc,structuretype)
 end
@@ -45,7 +45,7 @@ function p.octahedron()
     if randf() > 0.8 then
         block_E1_2_walls.structurething(7,7,7)
     else
-        local structures = {"Crystal","Fanatic","YingYan"}
+        local structures = {"Crystal","Fanatic","YingYan","Apple"}
         local structuretype = structures[randi(1,#structures)]
         if structuretype == "Crystal" then
             create_rect("block_Crystal_Spines",6,6,8,8,8,9)
@@ -59,6 +59,19 @@ function p.octahedron()
             create_rect("XAR_YING_FOREST",6,6,8,8,8,8)
             create_rect("block_green_and_pink",6,6,7,8,8,7)
             create_rect("block_omniverse_yan_forest",6,6,6,8,8,6)
+        end
+        if structuretype == "APPLE" then
+            for x,y,z in bps(6,6,8,8,8,8) do
+                local appletree = {"XAR_APPLE_TREE_RED","XAR_APPLE_TREE_RED_NO_BOT","XAR_APPLE_TREE_RED_NO_GRASS","XAR_APPLE_TREE_YELLOW","XAR_APPLE_TREE_YELLOW_NO_GRASS","XAR_APPLE_TREE_GREEN","XAR_APPLE_TREE_GREEN_NO_GRASS"}
+                local appletreetype = appletree[randi(1,#appletree)]
+                set_pos(x,y,z,appletreetype)
+            end
+            create_rect("XAR_TAU_CAVE_MOSS_TOP",6,6,7,8,8,7)
+        end
+        if randf() > 0.75 then
+            set_pos(7,7,8,"XAR_MAHOGANY_AMMO")
+        else
+
         end
     end
 end

@@ -134,13 +134,12 @@ end
 
 
 -------------------------------------------------
---              Test colors
+--              extra colors
 -------------------------------------------------
 function p.color_test(level, block_side_str)
+    local color = std.vec(1,1,1) 
     if ga_block_dist_to_viewer(level, std.bp(7, 7, 7)) < 5 then
     color = std.vec(ga_block_dist_to_viewer(level, std.bp(7, 7, 7))/5, 1.0, 1.0)
-    else
-    color = std.vec(1,1,1) 
     end
     local shade1 = p.shade_standard_dir(block_side_str)
     local shade2 = p.shade_local_fade_out_maybe(level)

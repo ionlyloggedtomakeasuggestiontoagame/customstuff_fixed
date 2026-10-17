@@ -37,7 +37,7 @@ function p.__main()
     end
     local msg = "Current yan forest layer: " .. depth
     add_bent_s(7,7,9,"bent_base_txt",msg)
-    add_bent_s(8,8,8,"bent_base_txt","You shall find a field and search for cheese, inside you will meet a choice, either use a big maze flower key to access E1-1 or use an electric flower key to access E1-2, both are needed to get to E2 however.\n\nAt depth 20 and beyond however u can find a rare and hard hybrid of the 2.")
+    add_bent_s(8,8,8,"bent_base_txt","You shall find a field and search for cheese, inside you will meet a choice, either finish a big maze flower or an electric flower to get the key that unlocks both sides of E1.\n\nAt depth 20 and beyond however u can find a rare and hard hybrid of the 2.")
     --rings
     if(randf() < 0.25) then
         local x = randi(0,15)

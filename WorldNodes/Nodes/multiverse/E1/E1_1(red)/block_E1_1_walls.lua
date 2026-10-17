@@ -37,7 +37,7 @@ end
 
 function p.structurething(x1,y1,z1,x2,y2,z2,xc,yc,zc)
     if randf() > 0.8 then
-        local structures = {"block_forest_bubble","XAR_FANATIC_LATTICE","XAR_FANATIC_WEED_AMMO_INVISIBLE","block_bubblegum_ball","block_odd_maze1","block_tick_dungeon_main","block_duo_maze","block_void_growth_dungeon","block_abstract_field"}
+        local structures = {"block_forest_bubble","XAR_FANATIC_LATTICE","XAR_MAHOGANY_AMMO","block_bubblegum_ball","block_odd_maze1","block_tick_dungeon_main","block_duo_maze","block_void_growth_dungeon","block_abstract_field"}
         local structuretype = structures[randi(1,#structures)]
         create_rect("block_E1_1_walls_transparent",x1,y1,z1,x2,y2,z2)
         set_pos(xc,yc,zc,structuretype)

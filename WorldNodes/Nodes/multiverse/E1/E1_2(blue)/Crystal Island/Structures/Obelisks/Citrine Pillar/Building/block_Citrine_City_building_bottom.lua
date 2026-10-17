@@ -9,7 +9,7 @@ end
 function p.__main()
     set_default_block("block_E1_2_air")
     srand(seed_normal())
-    omniverse.sponge("block_E1_2_air","block_Citrine_City")
+    fractals.sponge("block_E1_2_air","block_Citrine_City")
     create_rect("block_E1_2_air",0,0,1,15,15,15)
     for x = 1,4 do
     for y = 1,4 do

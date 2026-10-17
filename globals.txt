@@ -39,8 +39,7 @@ i xar.create_start_pos.which_reboot_cleared -1
 b multi.custom.stats.unrespawnable_zone false
 b multi.custom.stats.gravity false
 i multi.custom.stats.gravity_timer 0
-b multi.custom.key.maze false
-b multi.custom.key.electric false
+b multi.custom.key.E1 false
 
 ######################################
 #     PASSING DATA TO WORLDGEN

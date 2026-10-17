@@ -3,7 +3,7 @@ function p.__get_can_use(level, bp)
 end
 
 function p.__get_use_msg(level, bp)
-    return "You need an Electric Key to open this door"
+    return "You need an E1 key to open this door"
 end
 
 function p.__on_use(level, bp)
@@ -11,7 +11,7 @@ function p.__on_use(level, bp)
 end
 
 function p.payload(level, bp)
-    if ga_get_b("multi.custom.key.electric") then
+    if ga_get_b("multi.custom.key.E1") then
         ga_play_sound("oh_yeah")
         ga_play_sound("toll_door")
         local vcp = ga_bp_to_parent_vcp(bp)
@@ -23,7 +23,7 @@ function p.payload(level, bp)
             local bp2 = std.lbp_to_bp(vcp, lbp)
             --
             local block_type = ga_block_get(level, bp2)
-            if( block_type == "block_E1_2_door" ) then
+            if (block_type == "block_E1_1_door") or (block_type == "block_E1_2_door") then
                 --Removing the block.
                 ga_block_change_perm(level, bp2, "XAR_EMPTY_BORING")
             end

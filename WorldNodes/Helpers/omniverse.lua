@@ -118,53 +118,6 @@ function p.cylinder(bt,size,xpos,ypos,zpos,axis)
     end
 end
 
---sponge
-function p.sponge(air,block)
-    for x = 0, 3 do
-        for y = 0, 3 do
-            for z = 0, 3 do
-                p.menger(x*4, y*4, z*4, air, block)
-            end
-        end
-    end
-
-    create_rect(air, 0, 4, 4, 15, 11, 11)
-    create_rect(air, 4, 0, 4, 11, 15, 11)
-    create_rect(air, 4, 4, 0, 11, 11, 15)
-    
-    p.menger(6, 6, 6, air, block)
-end
-
-function p.menger(ox, oy, oz, air, block)
-    local origin = std.vec(ox, oy, oz)
-
-    local mrs = relative_pos( origin, 0, 0, 0)
-    local mre = relative_pos( origin, 3, 3, 3)
-    create_rect(block, mrs.x, mrs.y, mrs.z, mre.x, mre.y, mre.z)
-    
-    local zrs = relative_pos( origin, 1, 1, 0)
-    local zre = relative_pos( origin, 2, 2, 3)
-    create_rect(air, zrs.x, zrs.y, zrs.z, zre.x, zre.y, zre.z)
-
-    local yrs = relative_pos( origin, 0, 1, 1)
-    local yre = relative_pos( origin, 3, 2, 2)
-    create_rect(air, yrs.x, yrs.y, yrs.z, yre.x, yre.y, yre.z)
-
-    local xrs = relative_pos( origin, 1, 0, 1)
-    local xre = relative_pos( origin, 2, 3, 2)
-    create_rect(air, xrs.x, xrs.y, xrs.z, xre.x, xre.y, xre.z)
-end
-
-function relative_pos(origin, offset_x, offset_y, offset_z)
-
-    local x = origin.x + offset_x
-    local y = origin.y + offset_y
-    local z = origin.z + offset_z
-
-    return std.vec(x, y, z)
-end
---sponge end
-
 function p.replace_rect(toreplace,replaced,x1,y1,z1,x2,y2,z2)
     for x,y,z in bps(x1,y1,z1,x2,y2,z2) do
         if get_pos(x,y,z) == toreplace then

@@ -2,7 +2,7 @@ function p.__get_is_solid() return true end
 function p.__get_tex() return "block_error" end
 
 function p.__main()
-    omniverse.sponge("block_abstract_field_air","block_abstract_glitch")
+    fractals.sponge("block_abstract_field_air","block_abstract_glitch")
     block_abstract_field_air.air()
     omniverse.rings()
     block_abstract_field.monsters()

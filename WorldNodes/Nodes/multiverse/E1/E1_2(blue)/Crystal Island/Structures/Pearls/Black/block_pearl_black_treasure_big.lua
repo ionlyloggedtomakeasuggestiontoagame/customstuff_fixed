@@ -6,5 +6,5 @@ function p.__main()
     std.create_edges("XAR_SOLID_BORING_CONCRETE_YELLOW_X")
     set_pos(5,7,7,"block_pearl_weapon_mod")
     set_pos(7,7,7,"block_pearl_black_treasure")
-    set_pos(9,7,7,"block_E1_wall_key")
+    set_pos(9,7,7,"block_E1_1_dungeon_key")
 end

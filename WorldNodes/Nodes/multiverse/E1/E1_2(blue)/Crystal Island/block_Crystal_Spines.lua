@@ -13,9 +13,9 @@ function p.__main()
 
     local ore = {"crystal","pillar"}
     if get_input_adj_bt(0, 0, -1) == "block_Crystal_Spines" then
-    srand(seed_nearby(0, 0, -1))
+        srand(seed_nearby(0, 0, -1))
     else
-    srand(seed_normal()) 
+        srand(seed_normal()) 
     end
     local oretype = ore[randi(1,#ore)]
     if oretype == "crystal" then
@@ -49,9 +49,7 @@ function p.__main()
     if oretype == "pillar" then
         local crystals = {"Citrine","Quartz","Ruby"}
         local crystalstype = crystals[randi(1,#crystals)]
-        local crystalstip = nil
-
-        crystalstip = "block_"..crystalstype.."_Pillar_tip"
+        local crystalstip = "block_"..crystalstype.."_Pillar_tip"
         crystalstype = "block_"..crystalstype.."_Pillar"
 
         local randsize = randi(3,5)

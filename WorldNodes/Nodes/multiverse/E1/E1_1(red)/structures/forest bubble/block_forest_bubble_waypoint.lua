@@ -16,5 +16,6 @@ function p.__main()
         end
     end
     bent_set_param_s(2,2,6, "Forest Bubble")
-    bent_set_param_s(2,2,8, "Message from ^xa17600 Imp^!:\n\n^xa17600It is great to just be able to breath such a nice air here, no polution, just many trees.")
+    set_pos(2,2,8,"XAR_EMPTY_BORING")
+    add_bent_s(2,2,8, "bent_base_txt","Message from ^xa17600 Imp^!:\n\n^xa17600It is great to just be able to breath such a nice air here, no polution, just many trees.")
 end
