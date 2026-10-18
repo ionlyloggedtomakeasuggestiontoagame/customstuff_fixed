@@ -26,13 +26,13 @@ function p.__main()
         for i = 1,#tori do
             local v = tori[i]
             if (math.sqrt((x-v.x)^2+(y-v.y)^2)-R)^2 + (math.fmod(z-v.z+16,32)+8)^2 < r^2 then
-                set_pos(x,y,z,"XAR_TAU_CAVE_MOSS_TOP")
+                block_abstract_field_air.amalgam(x,y,z,"XAR_TAU_CAVE_MOSS_TOP")
             end
             if (math.sqrt((x-v.x)^2+(y-v.y)^2)-R)^2 + (math.fmod(z-v.z+16,32)+8)^2 < (r-1)^2 then
-                set_pos(x,y,z,"XAR_BOTANY_LAB_CAVE_IMP")
+                block_abstract_field_air.amalgam(x,y,z,"XAR_BOTANY_LAB_CAVE_IMP")
             end
             if (math.sqrt((x-v.x)^2+(y-v.y)^2)-R)^2 + (math.fmod(z-v.z+16,32)+8)^2 < (r-2)^2 then
-                set_pos(x,y,z,"XAR_TAU_CAVE_LAYER_2_CAVE")
+                block_abstract_field_air.amalgam(x,y,z,"XAR_TAU_CAVE_LAYER_2_CAVE")
                 break
             end
         end

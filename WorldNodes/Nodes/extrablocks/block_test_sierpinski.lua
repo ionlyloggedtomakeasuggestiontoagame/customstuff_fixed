@@ -6,7 +6,7 @@ function p.__main()
     set_default_block("XAR_EMPTY_BORING")
 
     local block = "block_test_sierpinski"
-    fractals.sierpinski(0,0,0,block)
+    fractals.sierpinski(block)
     --rings
     omniverse.rings()
 end

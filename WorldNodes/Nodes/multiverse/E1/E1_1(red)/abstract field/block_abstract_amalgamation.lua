@@ -23,7 +23,8 @@ function p.amalgamation()
                 ,"XAR_FANATIC_LATTICE"
                 ,"XAR_CUBE1"
                 ,"XAR_CUBE2"
-                ,"block_diagonal_lattice"}
+                ,"block_diagonal_lattice"
+                ,"block_abstract_NaN"}
             local colortype = colors[randi(1,#colors)]
             set_pos(x,y,z,colortype)
         end

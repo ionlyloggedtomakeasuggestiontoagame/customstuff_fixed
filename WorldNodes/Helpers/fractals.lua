@@ -46,11 +46,11 @@ end
 --sponge end
 
 --sierpisnki
-function p.sierpinski(x,y,z,block)
-    p.sierp2(0+x,0+y,0+z,block)
-    p.sierp2(8+x,8+y,0+z,block)
-    p.sierp2(8+x,0+y,8+z,block)
-    p.sierp2(0+x,8+y,8+z,block)
+function p.sierpinski(block)
+    p.sierp2(0,0,0,block)
+    p.sierp2(8,8,0,block)
+    p.sierp2(8,0,8,block)
+    p.sierp2(0,8,8,block)
 end
 
 function p.sierp2(x,y,z,block)

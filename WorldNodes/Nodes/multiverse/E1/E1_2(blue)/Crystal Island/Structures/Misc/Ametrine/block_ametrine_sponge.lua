@@ -16,6 +16,6 @@ function p.__main()
             end
         end
     else
-        fractals.sierpinski(0,0,0,"block_ametrine_sponge")
+        fractals.sierpinski("block_ametrine_sponge")
     end
 end

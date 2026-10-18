@@ -32,15 +32,6 @@ function p.air()
             p.amalgam(x,y,z,"block_abstract_helix")
         end
     end
-    --i2 spires
-    srand(seed_yz())
-    if randf() < 1/8 then
-        local y = randi(0,15)
-        local z = randi(0,15)
-        for x=0,15 do
-            p.amalgam(x,y,z,"XAR_FANATIC_LATTICE")
-        end
-    end
     --porous walls
     srand(seed_xz())
     if randf() < 1/8 then
@@ -53,6 +44,15 @@ function p.air()
     srand(seed_normal())
     if (randf() < 1/64) then
         p.amalgam(7,7,7,"block_abstract_field")
+    end
+    --i2 spires
+    srand(seed_yz())
+    if randf() < 1/8 then
+        local y = randi(0,15)
+        local z = randi(0,15)
+        for x=0,15 do
+            p.amalgam(x,y,z,"XAR_FANATIC_LATTICE")
+        end
     end
     omniverse.rings()
     block_abstract_field.monsters()
