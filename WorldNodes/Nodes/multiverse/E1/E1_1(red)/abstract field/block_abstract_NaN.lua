@@ -12,7 +12,12 @@ function p.__main()
             local colortype = colors[randi(1,#colors)]
             set_pos(x,y,z,colortype)
         end
+        if (randf() < 1/256) and (not bt_get_is_solid_physically(get_pos(x,y,z))) then
+            add_bent(x,y,z,"bent_unknown_abstract")
+        end
     end
+
+        
     block_abstract_field_air.air()
     omniverse.rings()
     block_abstract_field.monsters()

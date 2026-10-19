@@ -4,7 +4,8 @@
 bent_custom_bh          block_black          sphere.obj
 large_box_case_edges		block_black		large_box_case_edges.obj
 pyramid		block_black		pyramid.obj
-bent_base_txt_rat_jumpscare               txt                    large_box.obj
+bent_txt_rat_jumpscare               txt                    large_box.obj
+bent_unknown_abstract               bent_unknown                    large_box.obj
 white_void               block_bright                    huge_box_inverted.obj
 
 #pictures
@@ -33,3 +34,4 @@ MonsterYinYangBlue          MonsterYinYangBlue          sphere.obj
 MonsterGhostRat			MonsterRatMinorInverted		sphere_inverted.obj
 MonsterTwistedRat			MonsterRatMinor		sphere_twisted.obj
 MonsterKingRat			MonsterKingRat		sphere_high.obj
+MonsterMadGoblin          MonsterMadGoblin          sphere.obj

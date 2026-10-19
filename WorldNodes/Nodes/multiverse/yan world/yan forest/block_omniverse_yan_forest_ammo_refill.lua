@@ -29,7 +29,7 @@ function p.__main()
     create_rect("block_omniverse_yan_forest",0,5,15,15,10,15)
 
     --ammo
-    local ammo = {"bent_ammo_gun_1_once","bent_ammo_gun_2_large_once","bent_ammo_gun_3_large_once","bent_ammo_gun_4_large_once","bent_ammo_gun_5_large_once","bent_ammo_gun_6_large_once","bent_ammo_gun_7_large_once"}
+    local ammo = {"bent_ammo_gun_1","bent_ammo_gun_2_large","bent_ammo_gun_3_large","bent_ammo_gun_4_large","bent_ammo_gun_5_large","bent_ammo_gun_6_large","bent_ammo_gun_7_large"}
     local ammotype = ammo[randi(1,#ammo)]
     add_bent(7,7,7,ammotype)
 end

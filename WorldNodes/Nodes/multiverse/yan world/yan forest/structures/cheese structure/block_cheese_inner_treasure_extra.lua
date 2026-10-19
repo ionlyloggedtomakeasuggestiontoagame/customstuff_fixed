@@ -7,7 +7,7 @@ function p.__main()
     add_bent(13,13,13,"bent_base_ring_pink_source")
     add_bent(7,7,9,"bent_base_save")
     add_bent(7,7,7,"bent_gold_once_200")
-    add_bent(7,7,5,"bent_base_txt_rat_jumpscare")
+    add_bent(7,7,5,"bent_txt_rat_jumpscare")
     add_bent_s(7,7,11,"bent_base_waypoint","Cheese Extra Treasure")
     for i = 4,10 do
     --nukes
