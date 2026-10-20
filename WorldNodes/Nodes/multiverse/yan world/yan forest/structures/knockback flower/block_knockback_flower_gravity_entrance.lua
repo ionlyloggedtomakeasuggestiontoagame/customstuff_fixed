@@ -18,6 +18,8 @@ function p.__main()
         add_env_rect(1,0,1,14,0,14,"rect_gravity_enter")
         add_env_rect(1,1,1,14,1,14,"rect_gravity_exit")
         add_bent_s(7,7,7,"bent_base_txt", "From here, you gotta use the knockback of your weapons to build your way up and touch the B blocks at the ceilling.")
+        add_bent(7,7,9,"bent_buy_station")
+        add_bent(7,7,11,"bent_buy_nuke_300")
     else
         set_pos(7,7,0,"block_knockback_flower_gravity_entrance")
         block_knockback_flower_sky_entrance.sky()

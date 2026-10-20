@@ -60,7 +60,7 @@ function p.totem()
     end
     if fact == 2 then
         corner = "XAR_SOLID_BORING_CONCRETE_DARK_DOT"
-        bent_set_param_s(7,7,7,"Parkour flowers are weirdly bidimensional, why no one tries to jump at the sides and see anything") 
+        bent_set_param_s(7,7,7,"Parkour flowers are weirdly 2D, why no one tries to jump at the sides and see anything") 
     end
     if fact == 3 then
         corner = "XAR_SOLID_BORING_CONCRETE_PURPLE_X"
